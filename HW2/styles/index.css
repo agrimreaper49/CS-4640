@@ -1,0 +1,69 @@
+/* Container class for margin, padding, and width */
+.container {
+    margin: 0 auto; /* Center align the container */
+    padding: 20px; /* Adjust padding to your preference */
+    width: 80%; /* Adjust width to your preference */
+}
+
+/* Adds vertical space between elements */
+.container > * + * {
+    margin-top: 22px; /* Adds vertical space between container children */
+}
+
+/* Container for highlights */
+.container.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Optional: Adds space between flex items */
+}
+
+/* Individual highlight sections */
+.container.highlights section {
+    flex: 1;
+    min-width: 300px; /* Sets an initial flex basis of 300px */
+}
+
+
+/* Additional padding for sections */
+section {
+    padding: 30px; /* Adjust padding to your preference */
+}
+
+/* Copyright class to float left */
+.copyright {
+    float: left;
+}
+
+/* Primary-footer class for styling the footer */
+.primary-footer {
+    padding-top: 20px; /* Adjust top padding to your preference */
+    padding-bottom: 20px; /* Adjust bottom padding to your preference */
+}
+/* Navigation Menu Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Dark background for the nav bar */
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 14px 16px; /* Adjust padding for sizing */
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (darker) on hover */
+nav li a:hover {
+    background-color: #111;
+}
+
+
