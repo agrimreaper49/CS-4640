@@ -1,52 +1,56 @@
-/* Container class for margin, padding, and width */
 .container {
-    margin: 0 auto; /* Center align the container */
-    padding: 20px; /* Adjust padding to your preference */
-    width: 80%; /* Adjust width to your preference */
+    margin: 0 auto; 
+    padding: 10px; 
+    width: 80%; 
 }
 
-/* Adds vertical space between elements */
+
 .container > * + * {
-    margin-top: 22px; /* Adds vertical space between container children */
+    margin-top: 22px;   
 }
 
-/* Container for highlights */
+
 .container.highlights {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px; /* Optional: Adds space between flex items */
+    gap: 10px; 
 }
 
-/* Individual highlight sections */
+
 .container.highlights section {
     flex: 1;
-    min-width: 300px; /* Sets an initial flex basis of 300px */
+    min-width: 300px; 
 }
 
 
-/* Additional padding for sections */
+body {
+    background-color: #bee3c6; 
+}
+
+p {
+    font-family: "Courier New", Courier, monospace;
+}
+
 section {
-    padding: 30px; /* Adjust padding to your preference */
+    padding: 30px; 
 }
 
-/* Copyright class to float left */
 .copyright {
     float: left;
 }
 
-/* Primary-footer class for styling the footer */
 .primary-footer {
-    padding-top: 20px; /* Adjust top padding to your preference */
-    padding-bottom: 20px; /* Adjust bottom padding to your preference */
+    padding-top: 20px; 
+    padding-bottom: 20px; 
 }
-/* Navigation Menu Styling */
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333; /* Dark background for the nav bar */
+    background-color: #333; 
 }
 
 nav li {
@@ -55,15 +59,30 @@ nav li {
 
 nav li a {
     display: block;
-    color: white; /* Text color */
+    color: white; 
     text-align: center;
-    padding: 14px 16px; /* Adjust padding for sizing */
+    padding: 14px 16px; 
     text-decoration: none;
 }
 
-/* Change the link color to #111 (darker) on hover */
 nav li a:hover {
     background-color: #111;
 }
 
+li {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+img {
+    width: 400px; 
+    height: auto; 
+}
+
+h2 {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+}
 
