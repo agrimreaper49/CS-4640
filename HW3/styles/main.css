@@ -1,0 +1,103 @@
+.container {
+    margin: 0 auto; 
+    padding: 10px; 
+    width: 80%; 
+}
+
+
+.container > * + * {
+    margin-top: 22px;   
+}
+
+.container.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    flex-direction: column; 
+}
+
+.container.highlights section {
+    flex: 1;
+    flex-basis: 100%; 
+    min-width: 300px; 
+}
+
+@media (min-width: 768px) { 
+    .container.highlights {
+        flex-direction: row; 
+    }
+
+    .container.highlights section {
+        flex-basis: 300px; 
+    }
+
+    img {
+        width: 200px; 
+        height: auto; 
+    }
+}
+
+
+body {
+    background-color: #bee3c6; 
+}
+
+p {
+    font-family: "Courier New", Courier, monospace;
+}
+
+section {
+    padding: 30px; 
+}
+
+.copyright {
+    float: left;
+}
+
+.primary-footer {
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; 
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+li {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+img {
+    width: 400px; 
+    height: auto; 
+}
+
+h2 {
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+h1 {
+    font-family: "Courier New", Courier, monospace;
+}
+
