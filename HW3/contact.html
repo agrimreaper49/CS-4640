@@ -40,10 +40,12 @@
                 </div>
               </nav>
         </div>
-        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="Here's some amazing content. It's very engaging. Right?">
-            Click to toggle popover
-        </button>
-        <p>I can be reached at hws7ug@virginia.edu</p>
+        <div class="container">
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Contact Info" data-bs-content="Email: hws7ug@virginia.edu">
+                Contact Info
+            </button>
+        </div>
+       
         <footer class="container primary-footer">
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #333;">
@@ -66,5 +68,13 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.0/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                    return new bootstrap.Popover(popoverTriggerEl);
+                });
+            });
+        </script>
     </body>
 </html>

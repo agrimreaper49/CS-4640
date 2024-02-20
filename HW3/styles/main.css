@@ -55,11 +55,15 @@ section {
     float: left;
 }
 .custom-navbar-bg {
-    background-color: #333 !important; /* !important to ensure it overrides Bootstrap's styles */
+    background-color: #333 !important;
 }
 .primary-footer {
     padding-top: 20px; 
     padding-bottom: 20px; 
+}
+
+.accordian-body {
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 nav ul {
@@ -119,5 +123,13 @@ h1 {
 .list-group-item:last-child {
     border-bottom: 0;
 }
+
+.popover .popover-body {
+    text-align: center;
+}
+.my-popover-trigger + .popover {
+    margin-top: 10px;
+}
+
 
 
