@@ -40,7 +40,7 @@
 
 
 body {
-    background-color: #bee3c6; 
+    background-color: #bee3c6 !important; 
 }
 
 p {
@@ -54,7 +54,9 @@ section {
 .copyright {
     float: left;
 }
-
+.custom-navbar-bg {
+    background-color: #333 !important; /* !important to ensure it overrides Bootstrap's styles */
+}
 .primary-footer {
     padding-top: 20px; 
     padding-bottom: 20px; 
@@ -100,4 +102,22 @@ h2 {
 h1 {
     font-family: "Courier New", Courier, monospace;
 }
+
+.list-group {
+    width: 500px; 
+    margin: 0 auto;
+    padding: 0; 
+    list-style: none; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+.list-group-item {
+    padding: 10px 15px; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.list-group-item:last-child {
+    border-bottom: 0;
+}
+
 
